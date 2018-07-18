@@ -1,0 +1,21 @@
+Feature: I want to list smartbike controllers
+
+  Scenario: En temps que tech, je veux recuperer une liste de  controlleurs
+    Given i m authorized to log in the backEndApi ... passed in 0.473s
+    Given as a technician, I want to get a list of smart bike controllers ... passed in 0.274s
+    Then I want to print the response ... passed in 0.000s
+
+Feature: loginBackEndApi
+
+  Scenario: As a technician, I want to login the backEndApi
+    Given i m authorized to log in the backEndApi ... passed in 0.305s
+    When I log in the backEndApi ... passed in 0.000s
+    Then i'm authenticated to the backEndApi ... passed in 0.000s
+
+Feature: techTransfer
+
+  Scenario: As a technician, I want to unlock a lock
+    Given a lock X is registered ... passed in 0.220s
+    When a technician try to unlock this lock X ... passed in 0.240s
+    Then the lock X unlocks ... passed in 0.000s
+
